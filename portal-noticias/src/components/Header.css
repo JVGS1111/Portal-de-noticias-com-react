@@ -1,0 +1,22 @@
+header{
+    background-color: #4265E0;
+    width: 100%;
+    padding: 30px;
+    align-items: center;
+    display: inline-block;
+}
+
+
+.header-logo{
+    font-size: 25px;
+    float: left;
+}
+
+.header-nav{
+    float: right;
+    
+}
+.header-ul{
+    display: flex;
+}
+
