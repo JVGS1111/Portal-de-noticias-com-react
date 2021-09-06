@@ -20,3 +20,8 @@ header{
     display: flex;
 }
 
+.header-li{
+    list-style-type: none;
+    margin-left: 8px;
+    cursor: pointer;
+}
