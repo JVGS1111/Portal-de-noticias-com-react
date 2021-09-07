@@ -6,8 +6,23 @@
     grid-template-columns: 25% 25% 25% 25%;
 
 }
-.post{
+.post {
     margin: 20px;
-    background-color: red;
+    background-color: white;
     max-width: 400px;
+    padding: 15px;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 1px rgb(0 0 0 / 20%);
+}
+
+p.post-resumo {
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+h2.post-titulo {
+    text-align: center;
+    margin-bottom: 9px;
 }
