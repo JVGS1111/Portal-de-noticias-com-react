@@ -1,0 +1,71 @@
+{
+    "categorias": [
+        {
+            "id": "saude",
+            "nome": "saude"
+        },
+        {
+            "id": "games",
+            "nome": "games"
+        },
+        {
+            "id": "politica",
+            "nome": "politica"
+        },
+        {
+            "id": "animais",
+            "nome": "animais"
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "title": "Ultimas noticias Covid-19",
+            "metadescription": "As noticias mais recentes sobre a covid-19",
+            "body": "O Brasil registrou nesta segunda-feira (6) 296 mortes por Covid-19 nas últimas 24 horas, com o total de óbitos chegando a 583.866 desde o início da pandemia. Com isso, a média móvel de mortes nos últimos 7 dias ficou em 603 - a mais baixa desde 7 de dezembro (quando também foram registrados 603 óbitos). Em comparação à média de 14 dias atrás, a variação foi de -17% e aponta tendência de queda. É o 14º dia seguido de recuo nesse comparativo.",
+            "categoria": "saude"
+        },
+        {
+            "id": 2,
+            "title": "Novo Remedio para cancer",
+            "metadescription": "Cientistas descobriram novo medicamento promissor",
+            "body": "Uma nova droga chamada berzosertibe interrompe o crescimento de câncer em humanos, segundo estudo publicado recentemente. O novo medicamento ainda está em fase experimental, mas seus resultados são promissores, especialmente quando aliado com a quimioterapia. Especialistas expressam otimismo cauteloso em relação ao novo tratamento.",
+            "categoria": "saude"
+        },
+        {
+            "id": 3,
+            "title": "Novo titulo para ps5",
+            "metadescription": "Sony anuncia nova ip para nova geracao",
+            "body": "A Sony e a Firewalk Studios, produtora composta por veteranos de Destiny e Apex Legends, anunciaram uma nova IP AAA multiplayer para as plataformas PlayStation. Por enquanto, o título não conta com nome oficial, data e detalhes sobre gameplay. Em publicação no PS Blog, Tony Hsu, chefe da desenvolvedora, revelou a parceria e que a equipe planeja criar “novos mundos e inspirar mais momentos incríveis para os jogadores”.",
+            "categoria": "games"
+        },
+        {
+            "id": 4,
+            "title": "Novo titulo para xbox series x",
+            "metadescription": "Microsoft anuncia nova ip para nova geracao",
+            "body": "A Microsoft e a 343 Studios, produtora composta por veteranos de Destiny e Apex Legends, anunciaram uma nova IP AAA multiplayer para as plataformas PlayStation. Por enquanto, o título não conta com nome oficial, data e detalhes sobre gameplay. Em publicação no PS Blog, Tony Hsu, chefe da desenvolvedora, revelou a parceria e que a equipe planeja criar “novos mundos e inspirar mais momentos incríveis para os jogadores”.",
+            "categoria": "games"
+        },
+        {
+            "id": 5,
+            "title": "Novo ministro no governo",
+            "metadescription": "A explanada anunciou a hoje a troca do ministro da Casa Civil",
+            "body": "O senador Ciro Nogueira (PP-PI) aceitou oficialmente o convite do presidente Jair Bolsonaro e será o novo ministro da Casa Civil. Ciro confirmou a informação após se reunir com Bolsonaro no Palácio do Planalto. O próprio presidente já havia antecipado, na semana passada, que o senador iria para a Casa Civil.",
+            "categoria": "politica"
+        },
+        {
+            "id": 6,
+            "title": "Manifestantes protestam contra Bolsonaro e crise política neste 7 de setembro",
+            "metadescription": "Em fala a apoiadores em Brasília, presidente disse que nesta quarta haverá reunião do Conselho da República, integrado por ministros, parlamentares e presidentes de Câmara e Senado.",
+            "body": "Citado por Jair Bolsonaro durante discurso nesta terça-feira (7), o Conselho da República é um órgão comandado pelo presidente da República que tem, por definição, a prerrogativa de tratar de “intervenção federal, estado de defesa e estado de sítio” e também de “questões relevantes para a estabilidade das instituições democráticas”. Na manhã desta terça (7), em pronunciamento durante ato político a pretexto de comemorar o Dia da Independência, Bolsonaro fez ameaça golpista ao Supremo Tribunal Federal (vídeo abaixo) e afirmou que nesta quarta (8) haverá uma reunião do conselho.",
+            "categoria": "politica"
+        },
+        {
+            "id": 7,
+            "title": "Como treinar um gato",
+            "metadescription": "Sim! Você pode treinar um gato e é muito mais fácil do que você pensava",
+            "body": "Normalmente usado como ferramentas de treinamento para uma ampla variedade de animais, um clicker custará apenas alguns dólares e ajudará você a dar um reforço positivo quando estiver aprendendo a treinar um gato. (Você também pode usar uma caneta comum com um botão de clique - o importante é ter um ruído distinto que possa fazer instantaneamente.) A maior parte do treinamento do gato envolve oferecer a seu gato uma guloseima que ele goste após um clique para marcar o comportamento desejado.",
+            "categoria": "animais"
+        }
+    ]
+}

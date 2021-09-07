@@ -1,41 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../assets/css/components/ListaDePosts.css'
-
+import { getDado } from '../connection/api'
+import { Link } from 'react-router-dom'
 
 function ListaDePosts() {
+
+    const [posts, setPosts] = useState([])
+
+    useEffect(() => {
+        getDado('/posts', setPosts)
+    }, [])
+
     return (
         <section className="section-posts">
             <div className="container">
                 <div className="section-posts-wrapper">
-                    <article className="post">
-                        <span className="post-categoria">Saude</span>
-                        <h2 className="post-titulo">Titulo</h2>
-                        <p className="post-resumo">platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam</p>
-                    </article>
+                    {
+                        posts.map(post => (
+                            <article className="post">
+                                <span className="post-categoria">{post.categoria}</span>
+                                <h2 className="post-titulo">{post.title}</h2>
+                                <p className="post-resumo">{post.metadescription}</p>
+                                <Link to={`/posts/${post.i}`} ><span className="post-botao">Ler mais</span></Link>
+                            </article>
+                        ))
+                    }
 
-                    <article className="post">
-                        <span className="post-categoria">Saude</span>
-                        <h2 className="post-titulo">Titulo</h2>
-                        <p className="post-resumo">platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam</p>
-                    </article>
-
-                    <article className="post">
-                        <span className="post-categoria">Saude</span>
-                        <h2 className="post-titulo">Titulo</h2>
-                        <p className="post-resumo">platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam</p>
-                    </article>
-
-                    <article className="post">
-                        <span className="post-categoria">Saude</span>
-                        <h2 className="post-titulo">Titulo</h2>
-                        <p className="post-resumo">platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam</p>
-                    </article>
-
-                    <article className="post">
-                        <span className="post-categoria">Saude</span>
-                        <h2 className="post-titulo">Titulo</h2>
-                        <p className="post-resumo">platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam</p>
-                    </article>
                 </div>
             </div>
         </section>

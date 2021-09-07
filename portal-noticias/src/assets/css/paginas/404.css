@@ -1,0 +1,14 @@
+main.main-404 {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+h2.titulo-404 {
+    font-size: 180px;
+    font-weight: 700;
+}
