@@ -1,4 +1,6 @@
 import React from 'react';
+import '../assets/css/paginas/Home.css'
+import ListaDePosts from '../components/ListaDePosts';
 
 function Home() {
     return (
@@ -6,6 +8,7 @@ function Home() {
             <div className="container">
                 <h2 className="titulo-pagina">Notícias</h2>
             </div>
+            <ListaDePosts />
         </main>
     );
 }

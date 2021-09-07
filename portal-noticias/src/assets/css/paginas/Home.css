@@ -1,0 +1,10 @@
+main{
+    padding: 20px;
+}
+
+h2.titulo-pagina {
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 13px;
+    font-size: 40px;
+}

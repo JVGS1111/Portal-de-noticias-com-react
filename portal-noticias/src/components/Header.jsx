@@ -15,6 +15,7 @@ function Header() {
                     </ul>
                 </nav>
             </div>
+            <div className="clear"></div>
         </header>
     );
 }

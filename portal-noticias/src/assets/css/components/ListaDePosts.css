@@ -1,0 +1,13 @@
+.section-posts{
+    width: 100%;
+}
+.section-posts-wrapper{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+
+}
+.post{
+    margin: 20px;
+    background-color: red;
+    max-width: 400px;
+}
