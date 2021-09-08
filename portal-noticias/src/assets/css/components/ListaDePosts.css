@@ -26,3 +26,7 @@ h2.post-titulo {
     text-align: center;
     margin-bottom: 9px;
 }
+
+span.post-categoria {
+    cursor: pointer;
+}

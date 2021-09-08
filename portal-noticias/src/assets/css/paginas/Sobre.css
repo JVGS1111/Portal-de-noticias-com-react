@@ -1,0 +1,22 @@
+main.main-sobre {
+    width: 100%;
+    text-align: center;
+}
+
+h2.titulo-sobre {
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 13px;
+    font-size: 40px;
+}
+
+.sobre-texto-wrapper {
+    margin: 20px;
+    background-color: white;
+    max-width: 800px;
+    display: inline-block;
+    padding: 15px;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 15px;
+    box-shadow: 0px 0px 11px 1px rgb(0 0 0 / 10%);
+}
