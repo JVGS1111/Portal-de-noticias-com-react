@@ -5,6 +5,10 @@ header{
     align-items: center;
     display: inline-block;
 }
+header a {
+    color: black;
+    text-decoration: none;
+}
 
 .clear{
     clear: both;

@@ -3,6 +3,7 @@ import Header from './components/Header';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './paginas/Home';
 import Pagina404 from './paginas/404';
+import Sobre from './paginas/Sobre';
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
 
         <Route exact path='/'>
           <Home />
+        </Route>
+
+        <Route exact path='/sobre'>
+          <Sobre />
         </Route>
 
         <Route>

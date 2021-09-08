@@ -6,11 +6,13 @@ function Header() {
     return (
         <header>
             <div className="container">
-                <Link to=""><h2 className="header-logo">PORTAL DE NOTICIAS</h2></Link>
+                <h2 className="header-logo">
+                    <Link to="/">PORTAL DE NOTICIAS</Link>
+                </h2>
                 <nav className="header-nav">
                     <ul className="header-ul">
                         <li className="header-li">Artigos</li>
-                        <li className="header-li">Sobre</li>
+                        <Link to="/sobre"><li className="header-li">Sobre</li></Link>
                         <li className="header-li">Entrar</li>
                     </ul>
                 </nav>
