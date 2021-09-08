@@ -17,7 +17,7 @@ function ListaDePosts() {
                 <div className="section-posts-wrapper">
                     {
                         posts.map(post => (
-                            <article className="post">
+                            <article key={post.id} className="post">
                                 <span className="post-categoria">{post.categoria}</span>
                                 <h2 className="post-titulo">{post.title}</h2>
                                 <p className="post-resumo">{post.metadescription}</p>

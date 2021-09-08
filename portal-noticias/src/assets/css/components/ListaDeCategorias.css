@@ -1,0 +1,19 @@
+section.lista-categorias {
+    width: 100%;
+    background: #0F3C80
+}
+
+ul.lista-categorias-nav {
+    display: flex;
+    list-style-type: none;
+}
+
+li.lista-categoria-item {
+    font-size: 17px;
+    font-weight: 300;
+    padding: 7px 0px;
+    color: white;
+    text-transform: uppercase;
+    padding-right: 10px;
+    cursor: pointer;
+}
