@@ -11,7 +11,7 @@ function Header() {
                 </h2>
                 <nav className="header-nav">
                     <ul className="header-ul">
-                        <li className="header-li">Artigos</li>
+                        <Link to="/"><li className="header-li">Artigos</li></Link>
                         <Link to="/sobre"><li className="header-li">Sobre</li></Link>
                         <li className="header-li">Entrar</li>
                     </ul>

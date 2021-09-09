@@ -17,3 +17,11 @@ li.lista-categoria-item {
     padding-right: 10px;
     cursor: pointer;
 }
+
+li.lista-categoria-item:hover {
+    color: #ccc;
+}
+
+li.lista-categoria-item:active {
+    color: black;
+}
