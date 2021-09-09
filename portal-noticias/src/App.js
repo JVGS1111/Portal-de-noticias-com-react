@@ -6,6 +6,7 @@ import Pagina404 from './paginas/404';
 import Sobre from './paginas/Sobre';
 import ListaDeCategorias from './components/ListaDeCategorias';
 import Post from './paginas/Post';
+import Categorias from './paginas/Categorias';
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
 
         <Route path='/posts/:id'>
           <Post />
+        </Route>
+
+        <Route path='/categorias/:id'>
+          <ListaDeCategorias />
+          <Categorias />
         </Route>
 
         <Route>

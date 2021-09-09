@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../assets/css/components/ListaDeCategorias.css'
 import { getDado } from '../connection/api';
+import { Link } from 'react-router-dom'
 
 function ListaDeCategorias() {
 
@@ -16,7 +17,7 @@ function ListaDeCategorias() {
                 <ul className="lista-categorias-nav">
                     {
                         categorias.map(categoria => (
-                            <li key={categoria.id} className="lista-categoria-item">{categoria.nome}</li>
+                            <Link to={`/categorias/${categoria.id}`}><li key={categoria.id} className="lista-categoria-item">{categoria.nome}</li></Link>
                         ))
                     }
                 </ul>

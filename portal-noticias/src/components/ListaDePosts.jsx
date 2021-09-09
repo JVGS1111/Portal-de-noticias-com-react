@@ -3,12 +3,12 @@ import '../assets/css/components/ListaDePosts.css'
 import { getDado } from '../connection/api'
 import { Link } from 'react-router-dom'
 
-function ListaDePosts() {
+function ListaDePosts({ url }) {
 
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
-        getDado('/posts', setPosts)
+        getDado(url, setPosts)
     }, [])
 
     return (
