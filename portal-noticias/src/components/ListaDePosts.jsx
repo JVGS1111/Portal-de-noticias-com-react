@@ -18,10 +18,11 @@ function ListaDePosts({ url }) {
                     {
                         posts.map(post => (
                             <article key={post.id} className="post">
-                                <span className="post-categoria">{post.categoria}</span>
+                                <Link className="Link" to={`/categorias/${post.categoria}`}><span className="post-categoria">{post.categoria}</span></Link>
+                                
                                 <h2 className="post-titulo">{post.title}</h2>
                                 <p className="post-resumo">{post.metadescription}</p>
-                                <Link to={`/posts/${post.id}`} ><span className="post-botao">Ler mais</span></Link>
+                                <Link className="Link" to={`/posts/${post.id}`} ><span className="post-botao">Ler mais</span></Link>
                             </article>
                         ))
                     }

@@ -29,4 +29,20 @@ h2.post-titulo {
 
 span.post-categoria {
     cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+span.post-categoria:visited{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-decoration-line: none;
+}
+
+.Link{
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-decoration-line: none;
 }
