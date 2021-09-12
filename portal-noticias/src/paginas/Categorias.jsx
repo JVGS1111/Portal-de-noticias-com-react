@@ -1,28 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ListaDePosts from '../components/ListaDePosts';
-import { BrowserRouter as Router, useRouteMatch, useHistory, useParams } from 'react-router-dom'
-import { withRouter } from 'react-router-dom';
+import { Route, useRouteMatch, useParams } from 'react-router-dom'
+import ListaDeCategorias from '../components/ListaDeCategorias';
 
 function Categorias() {
     const { id } = useParams()
-    let history = useHistory();
-    const [categoria, setCategoria] = useState()
-
-    useEffect(() => {
-        history.listen(location => {
-            setCategoria('a')
-
-        })
-    })
+    const { path } = useRouteMatch()
 
     return (
+        <>
+        <ListaDeCategorias />
         <main>
             <div className="container">
                 <h2 className="titulo-pagina">Notícias</h2>
             </div>
-            <ListaDePosts url={`/posts?categoria=${id}`} />
+            <Route exact path={`${path}/`}>
+                 <ListaDePosts url={`/posts?categoria=${id}`} />
+            </Route>
         </main>
-
+        </>
     );
 }
 

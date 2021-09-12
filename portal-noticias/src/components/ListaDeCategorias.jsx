@@ -17,7 +17,7 @@ function ListaDeCategorias() {
                 <ul className="lista-categorias-nav">
                     {
                         categorias.map(categoria => (
-                            <Link to={`/categorias/${categoria.id}`}><li key={categoria.id} className="lista-categoria-item">{categoria.nome}</li></Link>
+                            <Link key={categoria.id} to={`/categorias/${categoria.id}`}><li className="lista-categoria-item">{categoria.nome}</li></Link>
                         ))
                     }
                 </ul>

@@ -9,7 +9,7 @@ function ListaDePosts({ url }) {
 
     useEffect(() => {
         getDado(url, setPosts)
-    }, [])
+    }, [url])
 
     return (
         <section className="section-posts">

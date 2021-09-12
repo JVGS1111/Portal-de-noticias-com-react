@@ -28,7 +28,6 @@ function App() {
         </Route>
 
         <Route path='/categorias/:id'>
-          <ListaDeCategorias />
           <Categorias />
         </Route>
 
